@@ -1,0 +1,108 @@
+body {
+  font-family: 'Helvetica', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212; /* Dark background */
+  color: #fff; /* White text */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+nav {
+  background: linear-gradient(to right, #282828, #333333);
+  display: flex;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s ease;
+}
+
+nav:hover {
+  background: linear-gradient(to right, #333333, #282828);
+}
+
+nav h1 {
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  transition: transform 0.3s ease;
+}
+
+nav h1:hover {
+  transform: scale(1.1);
+}
+
+.search-section {
+  margin: 40px auto;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.search-input {
+  background-color: #282828;
+  border: 1px solid #333333;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.search-input:focus {
+  background-color: #333333;
+}
+
+.search-button {
+  background: linear-gradient(to right, #4a90e2, #6cb2eb);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.search-button:hover {
+  background: linear-gradient(to right, #6cb2eb, #4a90e2);
+}
+
+.user-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  overflow-y: auto;
+  height: 50vh;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.user-list:hover {
+  transform: scale(1.02);
+}
+
+footer {
+  background: linear-gradient(to right, #121212, #282828);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  color: #fff;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+  margin-top: auto;
+  transition: background 0.3s ease;
+}
+
+footer:hover {
+  background: linear-gradient(to right, #282828, #121212);
+}
